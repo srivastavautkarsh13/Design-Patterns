@@ -1,3 +1,6 @@
+from vehicle import Vehicle
+from ticket import Ticket
+
 class EntranceGate:
     def __init__(self, gate_id: int):
         self.gate_id = gate_id

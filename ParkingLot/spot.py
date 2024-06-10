@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+from parkingLot import ParkingSpot
 class Observer(ABC):
     @abstractmethod
     def update(self, parking_spot: ParkingSpot):

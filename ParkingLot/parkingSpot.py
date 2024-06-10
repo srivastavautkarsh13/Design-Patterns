@@ -1,3 +1,6 @@
+from vehicle import Vehicle
+from enum import Enum
+
 class ParkingSpotType(Enum):
     CAR = "Car"
     BIKE = "Bike"

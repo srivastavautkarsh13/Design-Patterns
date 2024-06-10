@@ -1,5 +1,6 @@
 import uuid
 from datetime import datetime
+from vehicle import Vehicle
 
 class Ticket:
     def __init__(self, vehicle: Vehicle):

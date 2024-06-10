@@ -1,3 +1,5 @@
+from parkingSpot import ParkingSpotFactory, ParkingSpot, ParkingSpotType
+from vehicle import Vehicle
 class ParkingLot:
     _instance = None
 
@@ -17,7 +19,7 @@ class ParkingLot:
             else:
                 self.parking_spots.append(ParkingSpotFactory.create_parking_spot(i, ParkingSpotType.CAR))
 
-    def find_parking_spot(self, vehicle: Vehicle) -> Optional[ParkingSpot]:
+    def find_parking_spot(self, vehicle: Vehicle):
         for spot in self.parking_spots:
             if not spot.is_occupied and spot.spot_type.value == vehicle.vehicle_type.value:
                 return spot
